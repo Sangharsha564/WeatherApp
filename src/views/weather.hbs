@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlink}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="container-fluid weathersection">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <form class=" searchbar">
+                    <input id="inputlocation" class=" mr-sm-2" type="text" placeholder="Enter Location" aria-label="Search">
+                    <input type="submit" value="Search" id="searchBtn">
+                </form>
+                <div class="weatherinfo">
+                    <div id="location">
+                        <p>Your Location</p>
+                    </div>
+                    <div id="date">
+                        <p>2023-oct-12</p>
+                    </div>
+                    <div id="weather">
+                        <div id="weatherValue">
+                            <p></p>
+                        </div>
+                        <div >
+                            <p><sup>o</sup>C</p>
+                        </div>
+                        <div id="icons">
+                            <p><i class="fa-solid fa-cloud-sun-rain fa-flip fa-2xl" style="color: #eacb1a;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{>footer}}
+    {{>scriptlink}}
+</body>
+</html>
